@@ -12,10 +12,10 @@ This project demonstrates a basic implementation of a "Hand raise detection" mec
 -Model Initialization: Loads YOLOv8n-pose model to detect body keypoints.
 
 -Frame-by-Frame Analysis:  
-    -For each person in a frame:  
-    -Extracts wrist and shoulder keypoints.  
-    -Checks if wrist is significantly above shoulder to detect a raised hand.  
-    -Determines the person's seating zone by mapping their position.  
+    For each person in a frame:  
+    Extracts wrist and shoulder keypoints.  
+    Checks if wrist is significantly above shoulder to detect a raised hand.  
+    Determines the person's seating zone by mapping their position.  
 
 -Output Generation:  
 -Annotates names of hand-raising individuals on the frame.  
