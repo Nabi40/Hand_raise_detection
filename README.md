@@ -13,35 +13,35 @@ This project demonstrates a basic implementation of a "Hand raise detection" mec
 
 Frame-by-Frame Analysis:  
     For each person in a frame:  
-    Extracts wrist and shoulder keypoints.  
-    Checks if wrist is significantly above shoulder to detect a raised hand.  
-    Determines the person's seating zone by mapping their position.  
+    - Extracts wrist and shoulder keypoints.  
+    - Checks if wrist is significantly above shoulder to detect a raised hand.  
+    - Determines the person's seating zone by mapping their position.  
 
--Output Generation:  
--Annotates names of hand-raising individuals on the frame.  
--Saves the output to output_hand_detection.mp4.  
+Output Generation:  
+- Annotates names of hand-raising individuals on the frame.  
+- Saves the output to output_hand_detection.mp4.  
 
 ---
 
 ##Example Output📌  
--A line of text (Name of the person) is overlaid on the video when a hand raise is detected. The mapping is based on estimated seating zones.  
+- A line of text (Name of the person) is overlaid on the video when a hand raise is detected. The mapping is based on estimated seating zones.  
 
 ---
 
 ##❌Limitations  
 Accuracy is suboptimal because:  
-  Model is not trained on custom data.  
-  YOLOv8n-pose is not fine-tuned for classroom gesture detection.  
+ - Model is not trained on custom data.  
+ - YOLOv8n-pose is not fine-tuned for classroom gesture detection.  
 
 
 Better Alternatives:  
-  MediaPipe Hands and MediaPipe Pose might offer better hand tracking accuracy for this use case.  
+ - MediaPipe Hands and MediaPipe Pose might offer better hand tracking accuracy for this use case.  
 
   
 Person Mapping:  
-  Seating map is hardcoded and may not work for different layouts or camera angles.  
+ - Seating map is hardcoded and may not work for different layouts or camera angles.  
 
 
 No Real-Time Support:  
-  Currently processes recorded video only; no live stream support.  
+ - Currently processes recorded video only; no live stream support.  
 
