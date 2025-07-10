@@ -6,10 +6,10 @@ This project demonstrates a basic implementation of a "Hand raise detection" mec
 
 ---
 
-#3How it works📌
+#How it works📌
 
--Video Upload: You upload a classroom/meeting video to the notebook.
--Model Initialization: Loads YOLOv8n-pose model to detect body keypoints.
+- Video Upload: You upload a classroom/meeting video to the notebook.
+- Model Initialization: Loads YOLOv8n-pose model to detect body keypoints.
 
 Frame-by-Frame Analysis:  
     For each person in a frame:  
