@@ -1,17 +1,20 @@
-﻿# Hand_raise_detection📌
-This project demonstrates a basic implementation of a "Hand raise detection" mechanism that detects if a person raises their hand in a video using pose estimation. The system uses YOLOv8n-pose for keypoint detection and analyzes wrist-to-shoulder positions to infer raised hands, mapping them to seating positions.
+﻿# and_raise_detection📌
+This project demonstrates a basic implementation of a "Hand raise detection" mechanism that detects if a person raises their hand in a video using pose estimation. The system uses YOLOv8n-pose for keypoint detection and analyzes wrist-to-shoulder positions to infer raised hands, mapping them to seating positions.  
 
-⚠️ Accuracy is not production-grade due to lack of custom training. See limitations below.
+⚠️ Accuracy is not production-grade due to lack of custom training. See limitations below.  
 
 
-#How it works📌
+#_How it works_📌
+
 Video Upload: You upload a classroom/meeting video to the notebook.
+
 Model Initialization: Loads YOLOv8n-pose model to detect body keypoints.
-Frame-by-Frame Analysis:
-    For each person in a frame:
-    Extracts wrist and shoulder keypoints.
-    Checks if wrist is significantly above shoulder to detect a raised hand.
-    Determines the person's seating zone by mapping their position.
+
+Frame-by-Frame Analysis:  
+    For each person in a frame:  
+    Extracts wrist and shoulder keypoints.  
+    Checks if wrist is significantly above shoulder to detect a raised hand.  
+    Determines the person's seating zone by mapping their position.  
 
 Output Generation:
 Annotates names of hand-raising individuals on the frame.
