@@ -6,7 +6,7 @@ This project demonstrates a basic implementation of a "Hand raise detection" mec
 
 ---
 
-#How it works📌
+## How it works📌
 
 - Video Upload: You upload a classroom/meeting video to the notebook.
 - Model Initialization: Loads YOLOv8n-pose model to detect body keypoints.
@@ -23,12 +23,12 @@ Output Generation:
 
 ---
 
-##Example Output📌  
+## Example Output📌  
 - A line of text (Name of the person) is overlaid on the video when a hand raise is detected. The mapping is based on estimated seating zones.  
 
 ---
 
-##❌Limitations  
+## ❌Limitations  
 Accuracy is suboptimal because:  
  - Model is not trained on custom data.  
  - YOLOv8n-pose is not fine-tuned for classroom gesture detection.  
