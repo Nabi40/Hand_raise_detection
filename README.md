@@ -1,7 +1,11 @@
 ﻿# and_raise_detection📌
 This project demonstrates a basic implementation of a "Hand raise detection" mechanism that detects if a person raises their hand in a video using pose estimation. The system uses YOLOv8n-pose for keypoint detection and analyzes wrist-to-shoulder positions to infer raised hands, mapping them to seating positions.  
 
+
+
 ⚠️ Accuracy is not production-grade due to lack of custom training. See limitations below.  
+
+
 
 
 #_How it works_📌
